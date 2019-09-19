@@ -8,3 +8,7 @@ matrix:
     - language: python
       python:
         - 3.5
+      install:
+        - pip install nose coverage python-coveralls
+      script:
+        - nosetests -v --with-coverage --cover-package=. -w src/test/python/
