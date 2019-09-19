@@ -6,3 +6,7 @@ target/
 
 # IntelliJ
 .idea
+
+# nosetests
+src/test/python/__pycache__/test.cpython-36.pyc
+.coverage
