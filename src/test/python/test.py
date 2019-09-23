@@ -18,3 +18,4 @@ def test_consistency():
             assert line1 == line2, (
                 'Stripping metadata.yml produces: %s, '
                 'but wm.yml contains: %s' % (line1, line2))
+    os.remove('temp_wm.yml')
