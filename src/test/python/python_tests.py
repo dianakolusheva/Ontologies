@@ -1,5 +1,6 @@
 import sys
 import os
+import re
 from scripts.strip_metadata import main
 from unittest.mock import patch
 
@@ -20,3 +21,6 @@ def test_consistency():
                 'Stripping metadata.yml produces: %s, '
                 'but wm.yml contains: %s' % (line1, line2))
     os.remove('temp_wm.yml')
+
+# TODO add tests for checking whether opposites exist as entries
+# TODO add tests for ensuring all nodes have underscores
