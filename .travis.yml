@@ -10,5 +10,7 @@ matrix:
         - 3.5
       install:
         - pip install nose coverage python-coveralls
+      before_script:
+        - export PYTHONPATH=$PYTHONPATH:$(pwd)
       script:
         - nosetests -v --with-coverage --cover-package=. -w src/test/python/
