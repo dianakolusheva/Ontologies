@@ -5,6 +5,7 @@ from unittest.mock import patch
 
 
 def test_consistency():
+    """Test for consistency between wm_metadatata.yml and wm.yml"""
     cur_dir = os.path.dirname(__file__)
     metadata_file = os.path.abspath(os.path.join(
         cur_dir, "..", "..", "..", "wm_metadata.yml"))
